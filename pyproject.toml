@@ -1,0 +1,26 @@
+[project]
+name = "dexa-lang"
+version = "0.1.0"
+description = "A unified language for documents, data, diagrams, math, and configurations."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Dexa Project Contributors" }]
+
+[project.dependencies]
+# Using a simple list of dependencies for now.
+# In a real project, versions would be pinned.
+"lark-parser" # A great library for building parsers
+"svgwrite"    # For rendering .dxd and .vdx to SVG
+"click"       # For building a beautiful command-line interface
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-wheel-metadata/
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.so
+*.egg
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Compiled Dexa output
+*.dex
+
+# Output files from tools
+*.svg
+*.png
+*.json
+*.html
+*.sql
+*.sqlite
+
+# OS-specific
+.DS_Store
+Thumbs.db
